@@ -7,15 +7,14 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 const { v4: uuidV4 } = require("uuid");
-const { PeerServer } = require("peer");
-
-const peerServer = PeerServer({ port: 5556 });
 
 const port = process.env.PORT || 5555;
 
 app.set("view engine", "hbs");
 
 app.use("/", express.static(__dirname + "/public"));
+
+// app.use("/", peerServer);
 
 app.get("/", (req, res) => {
   res.redirect(`/${uuidV4()}`);

@@ -11,6 +11,13 @@
   <script src="/socket.io/socket.io.js"></script>
 
   <script>
+    const peer = new Peer('someid', {
+      port: 5556,
+      path: '/'
+    });
+  </script>
+
+  <script>
     const roomid = "{{ roomId }}"
   </script>
 
