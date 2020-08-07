@@ -2,7 +2,7 @@ const socket = io();
 const videoGrid = document.getElementById("video-grid");
 
 const myPeer = new Peer(undefined, {
-  host: "https://video-chat-piyush.herokuapp.com/0e32663c-bd52-4965-87fe-6fbb0836593f",
+  host: "https://video-chat-piyush.herokuapp.com/",
   port: "5556",
 });
 
