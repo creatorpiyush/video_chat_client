@@ -3,7 +3,7 @@ const videoGrid = document.getElementById("video-grid");
 
 const myPeer = new Peer(undefined, {
   host: "https://video-chat-piyush.herokuapp.com/",
-  port: "5556",
+  port: 443,
 });
 
 const myVideo = document.createElement("video");
