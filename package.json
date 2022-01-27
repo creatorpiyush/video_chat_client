@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.1",
+    "hbs": "^4.2.0",
     "nodemon": "^2.0.4",
     "peer": "^0.5.3",
     "socket.io": "^2.3.0",
